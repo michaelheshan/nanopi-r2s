@@ -16,12 +16,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.sec_token }}
-      sec_token: ${{ secrets.sec_token }}
+      GITHUB_TOKEN: ${{ R2S_SECRETS }}
+      sec_token: ${{ R2S_SECRETS }}
 
     steps:
       - name: Setup timezone
-        uses: zcong1993/setup-timezone@master
+        uses: michaelheshan/setup-timezone@master
         with:
           timezone: Asia/Shanghai
 
